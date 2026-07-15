@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameVault — A Video Game Database</title>
+  <meta name="description" content="GameVault is a browsable database of video games with poster art, ratings, platforms and full detail pages for every title.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='9' fill='%230B0E14'/%3E%3Cpolygon points='16,12 30,20 16,28' fill='%2322D3EE'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-brand" href="index.html">
+        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="40" height="40" rx="9" fill="#131722"/>
+          <polygon points="16,12 30,20 16,28" fill="#22D3EE"/>
+        </svg>
+        <span>GameVault</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="games.html">Browse</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container spotlight">
+        <div>
+          <span class="eyebrow">Currently trending</span>
+          <h1>Every great game, <span class="gradient-text">catalogued</span>.</h1>
+          <p class="lead">GameVault tracks twelve titles across genres and platforms — full poster art, ratings, and a dedicated stat page for every single one.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="games.html">Browse the database</a>
+            <a class="btn btn-outline" id="spotlight-cta" href="games.html">View top title</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>12</strong><span>Titles catalogued</span></div>
+            <div><strong>8</strong><span>Genres covered</span></div>
+            <div><strong>2011–2022</strong><span>Release range</span></div>
+          </div>
+        </div>
+        <div class="spotlight-poster" id="spotlight-media"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Top rated</span>
+            <h2>Featured titles</h2>
+          </div>
+          <a class="btn btn-outline" href="games.html">View all titles</a>
+        </div>
+        <div class="game-grid" id="featured-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>GameVault — a class project built with HTML, CSS &amp; JavaScript.</span>
+      <a href="contact.html">Get in touch</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
