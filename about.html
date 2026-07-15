@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — GameVault</title>
+  <meta name="description" content="What GameVault is, how it was built, and what it's for.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-brand" href="index.html">
+        <img src="images/logo.svg" alt="" width="30" height="30">
+        <span>GAMEVAULT</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Browse</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <span class="eyebrow">About the project</span>
+        <h1>Why GameVault exists</h1>
+
+        <div class="two-col" style="margin-top: 32px;">
+          <div class="panel stack">
+            <h2>The idea</h2>
+            <p>GameVault is a small database of video games, built to practice organizing real information — titles, genres, platforms, release years and ratings — into something people can actually search through, instead of just reading a static list.</p>
+            <p>Every game is shown as a "cartridge" card. Clicking one opens a full stat sheet with the publisher, release year, platform and player count, styled after old game cartridge labels.</p>
+          </div>
+          <div class="panel">
+            <h2>Built with</h2>
+            <ul class="tech-list">
+              <li>HTML5 for structure and semantics</li>
+              <li>CSS3 for the retro-arcade visual design</li>
+              <li>Vanilla JavaScript for search, filtering and the details modal</li>
+              <li>Hosted for free on GitHub Pages</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container panel">
+        <h2>How the data works</h2>
+        <p>All 12 titles live in one JavaScript array inside <code>js/script.js</code>. The homepage pulls the four highest-rated entries, and the Browse page renders every entry and filters it live as you type or change the dropdowns — no page reloads, no backend server.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>GameVault — a class project built with HTML, CSS &amp; JavaScript.</span>
+      <a href="contact.html">Get in touch</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
