@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — GameVault</title>
+  <meta name="description" content="What GameVault is, how it was built, and what it's for.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='9' fill='%230B0E14'/%3E%3Cpolygon points='16,12 30,20 16,28' fill='%2322D3EE'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-brand" href="index.html">
+        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="40" height="40" rx="9" fill="#131722"/>
+          <polygon points="16,12 30,20 16,28" fill="#22D3EE"/>
+        </svg>
+        <span>GameVault</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Browse</a></li>
+        <li><a href="genres.html">Genres</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="submit.html">Suggest</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <span class="eyebrow">About the project</span>
+        <h1>Why GameVault exists</h1>
+
+        <div class="two-col" style="margin-top: 28px;">
+          <div class="panel stack">
+            <h2>Who We Are</h2>
+            <p>GameVault is a small database of video games, built to practice organizing real information — titles, genres, platforms, release dates, ratings and system requirements — into something people can actually search through and click into.</p>
+            <h2>Our Mission</h2>
+            <p>To catalog a wide spread of great games across genres and platforms, and give each one a proper page: real poster art, accurate stats, and honest requirements — not just a list of names.</p>
+            <h2>Why a Database, Not a List?</h2>
+            <ul class="tech-list">
+              <li>Search and filter instead of scrolling forever</li>
+              <li>Every title gets its own dedicated page and URL</li>
+              <li>Genres are browsable, not just labels</li>
+              <li>Data lives in one place, so it stays consistent</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h2>By the Numbers</h2>
+            <div class="fact-grid" style="margin-bottom: 0;">
+              <div class="fact-card"><dt>Titles</dt><dd>12</dd></div>
+              <div class="fact-card"><dt>Genres</dt><dd>10</dd></div>
+              <div class="fact-card"><dt>Platforms</dt><dd>4</dd></div>
+              <div class="fact-card"><dt>Release Range</dt><dd>2011–2022</dd></div>
+            </div>
+            <h2 style="margin-top: 28px;">Built With</h2>
+            <ul class="tech-list">
+              <li>HTML5 for structure and semantics</li>
+              <li>CSS3 for the dark gaming-platform design</li>
+              <li>Vanilla JavaScript for search, filtering, genres and detail pages</li>
+              <li>Hosted for free on GitHub Pages</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">What we care about</span>
+            <h2>Our Values</h2>
+          </div>
+        </div>
+        <div class="category-grid">
+          <div class="category-card">
+            <span class="cat-icon">◈</span>
+            <h3>Accuracy</h3>
+            <span class="cat-count">Every title's stats are checked before it's added.</span>
+          </div>
+          <div class="category-card">
+            <span class="cat-icon">☰</span>
+            <h3>Accessibility</h3>
+            <span class="cat-count">Search and filters so anyone can find a title fast.</span>
+          </div>
+          <div class="category-card">
+            <span class="cat-icon">✦</span>
+            <h3>Craft</h3>
+            <span class="cat-count">Original poster art and a design built for this project alone.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="40" height="40" rx="9" fill="#131722"/>
+          <polygon points="16,12 30,20 16,28" fill="#22D3EE"/>
+        </svg>
+            <span>GameVault</span>
+          </div>
+          <p>A student-built database cataloguing great video games — genres, platforms, ratings, and a full page for every title.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="games.html">Browse all titles</a></li>
+            <li><a href="genres.html">Genres</a></li>
+            <li><a href="reviews.html">Community reviews</a></li>
+            <li><a href="submit.html">Suggest a game</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Project</h4>
+          <ul>
+            <li><a href="about.html">About this project</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-row">
+        <span>&copy; 2026 GameVault. Built for a class project.</span>
+        <a href="contact.html">Get in touch</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — GameVault</title>
+  <meta name="description" content="Frequently asked questions about the GameVault database project.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='9' fill='%230B0E14'/%3E%3Cpolygon points='16,12 30,20 16,28' fill='%2322D3EE'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-brand" href="index.html">
+        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="40" height="40" rx="9" fill="#131722"/>
+          <polygon points="16,12 30,20 16,28" fill="#22D3EE"/>
+        </svg>
+        <span>GameVault</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Browse</a></li>
+        <li><a href="genres.html">Genres</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="faq.html" aria-current="page">FAQ</a></li>
+        <li><a href="submit.html">Suggest</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section style="padding-bottom: 0;">
+      <div class="container">
+        <span class="eyebrow">Need to know</span>
+        <h1>Frequently Asked Questions</h1>
+        <p class="lead">Find answers to the most common questions about the database and how it works.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Where does the game data come from?</span>
+              <svg class="chevron" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Every title's genre, platform, release date, publisher and developer was researched and entered by hand into a single JavaScript file that powers the whole site.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Are the system requirements official?</span>
+              <svg class="chevron" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>They're approximate, typical minimum specs for a class project — not copied from any publisher's official spec sheet. Treat them as a general guide, not an exact source.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can I suggest a game to add?</span>
+              <svg class="chevron" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes — head to the Suggest a Game page, fill out the short form, and it'll be considered for the next update to the database.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How does the search and filter work?</span>
+              <svg class="chevron" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Everything happens in the browser with JavaScript — typing in the search box or changing a dropdown instantly filters the twelve titles already loaded on the page, no server involved.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Why does every game have its own page?</span>
+              <svg class="chevron" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Instead of writing twelve near-identical HTML files, one template (game.html) reads an id from the page's URL and fills itself in from the database. It's more maintainable and it's how a lot of real sites handle this.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Is this a real store or database?</span>
+              <svg class="chevron" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>No — GameVault is a static, front-end-only class project. Nothing is actually purchased, submitted to a server, or sent anywhere; the forms redirect to a thank-you page for demonstration.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="40" height="40" rx="9" fill="#131722"/>
+          <polygon points="16,12 30,20 16,28" fill="#22D3EE"/>
+        </svg>
+            <span>GameVault</span>
+          </div>
+          <p>A student-built database cataloguing great video games — genres, platforms, ratings, and a full page for every title.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="games.html">Browse all titles</a></li>
+            <li><a href="genres.html">Genres</a></li>
+            <li><a href="reviews.html">Community reviews</a></li>
+            <li><a href="submit.html">Suggest a game</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Project</h4>
+          <ul>
+            <li><a href="about.html">About this project</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-row">
+        <span>&copy; 2026 GameVault. Built for a class project.</span>
+        <a href="contact.html">Get in touch</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
